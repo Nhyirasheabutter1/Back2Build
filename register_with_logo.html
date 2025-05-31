@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Back2Build – Register</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef9f1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #3e2f19;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    form {
+      margin-top: 2rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 2rem;
+      background-color: #3e2f19;
+      color: #fff0c2;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #3e2f19;
+      color: #ffebc1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Register with Back2Build</h1>
+  </header>
+
+  <main>
+    <div style="text-align:center; margin-bottom: 2rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Adinkra_Sankofa_Symbol.svg/800px-Adinkra_Sankofa_Symbol.svg.png"
+           alt="Sankofa Logo" width="120" />
+    </div>
+    <h2>Join the Movement</h2>
+    <p>If you're ready to come home and build your future, fill in your details below:</p>
+    <form name="back2build-registration" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="country" placeholder="Current Country" required />
+      <textarea name="reason" rows="5" placeholder="Why do you want to return?" required></textarea>
+      <button type="submit">Submit Registration</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Back2Build | The Spirit Calls You Home</p>
+  </footer>
+</body>
+</html>
